@@ -14,6 +14,8 @@
 		3D1DD87C21529D4F00DE4331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1DD87A21529D4F00DE4331 /* LaunchScreen.storyboard */; };
 		3D1DD88721529D4F00DE4331 /* NavegacionTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DD88621529D4F00DE4331 /* NavegacionTableViewTests.swift */; };
 		3D1DD89221529D5000DE4331 /* NavegacionTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DD89121529D5000DE4331 /* NavegacionTableViewUITests.swift */; };
+		3D1DD8A32152A62B00DE4331 /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DD8A22152A62B00DE4331 /* Materia.swift */; };
+		3D1DD8A52152AC5E00DE4331 /* CeldaMateria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DD8A42152AC5E00DE4331 /* CeldaMateria.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3D1DD88D21529D5000DE4331 /* NavegacionTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavegacionTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1DD89121529D5000DE4331 /* NavegacionTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavegacionTableViewUITests.swift; sourceTree = "<group>"; };
 		3D1DD89321529D5000DE4331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1DD8A22152A62B00DE4331 /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		3D1DD8A42152AC5E00DE4331 /* CeldaMateria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,9 @@
 		3D1DD87021529D4D00DE4331 /* NavegacionTableView */ = {
 			isa = PBXGroup;
 			children = (
-				3D1DD87121529D4D00DE4331 /* AppDelegate.swift */,
-				3D1DD87321529D4D00DE4331 /* ViewController.swift */,
-				3D1DD87521529D4D00DE4331 /* Main.storyboard */,
-				3D1DD87821529D4F00DE4331 /* Assets.xcassets */,
-				3D1DD87A21529D4F00DE4331 /* LaunchScreen.storyboard */,
-				3D1DD87D21529D4F00DE4331 /* Info.plist */,
+				3D1DD8A12152A50E00DE4331 /* Models */,
+				3D1DD8A02152A4FF00DE4331 /* Views */,
+				3D1DD89F2152A4C700DE4331 /* ViewControllers */,
 			);
 			path = NavegacionTableView;
 			sourceTree = "<group>";
@@ -123,6 +124,35 @@
 				3D1DD89321529D5000DE4331 /* Info.plist */,
 			);
 			path = NavegacionTableViewUITests;
+			sourceTree = "<group>";
+		};
+		3D1DD89F2152A4C700DE4331 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D1DD8A42152AC5E00DE4331 /* CeldaMateria.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D1DD8A02152A4FF00DE4331 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D1DD87521529D4D00DE4331 /* Main.storyboard */,
+				3D1DD87A21529D4F00DE4331 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D1DD8A12152A50E00DE4331 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D1DD87321529D4D00DE4331 /* ViewController.swift */,
+				3D1DD87D21529D4F00DE4331 /* Info.plist */,
+				3D1DD87121529D4D00DE4331 /* AppDelegate.swift */,
+				3D1DD87821529D4F00DE4331 /* Assets.xcassets */,
+				3D1DD8A22152A62B00DE4331 /* Materia.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D1DD87421529D4D00DE4331 /* ViewController.swift in Sources */,
+				3D1DD8A52152AC5E00DE4331 /* CeldaMateria.swift in Sources */,
 				3D1DD87221529D4D00DE4331 /* AppDelegate.swift in Sources */,
+				3D1DD8A32152A62B00DE4331 /* Materia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
